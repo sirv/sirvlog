@@ -134,7 +134,7 @@ end.run_action(:enable)
 ## Authors
 
 **Oleksiy Krivoshey**
-    [https://github.com/oleksiyk](https://github.com/oleksiyk)
+  * [https://github.com/oleksiyk](https://github.com/oleksiyk)
 
 # License (MIT)
 
