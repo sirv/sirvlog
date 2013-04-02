@@ -13,9 +13,9 @@ sirvlog is Node.JS based centralized logging server for applications.
 
 ### See also
 
-  * [sirvlog web frontend](https://github.com/magictoolbox/sirvlog-web)
-  * [log parser for sirvlog](https://github.com/magictoolbox/sirvlog-parser)
-  * [service healh monitors for sirvlog](https://github.com/magictoolbox/sirvlog-monitors)
+  * [sirvlog web frontend](https://github.com/sirv/sirvlog-web)
+  * [log parser for sirvlog](https://github.com/sirv/sirvlog-parser)
+  * [service healh monitors for sirvlog](https://github.com/sirv/sirvlog-monitors)
 
 ## Getting started
 
@@ -145,7 +145,7 @@ end.run_action(:enable)
 
 # License (MIT)
 
-Copyright (c) 2013 Magic Toolbox.
+Copyright (c) 2013 Sirv.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

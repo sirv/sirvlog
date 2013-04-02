@@ -21,17 +21,17 @@
     "start": "node server.js"
   },
   "bugs": {
-    "url": "https://github.com/magictoolbox/sirvlog/issues"
+    "url": "https://github.com/sirv/sirvlog/issues"
   },
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git://github.com/magictoolbox/sirvlog.git"
+    "url": "git://github.com/sirv/sirvlog.git"
   },
   "keywords": [
     "log server",
     "logs",
-    "magictoolbox",
+    "sirv",
     "elasticsearch"
   ],
   "license": "MIT"
