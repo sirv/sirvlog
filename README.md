@@ -9,7 +9,7 @@ sirvlog is Node.JS based centralized logging server for applications.
 - JSON-based messages
 - server-side filters in Javascript
 - uses ElasticSearch
-- supports syslog protocol (tcp only)
+- supports [syslog](#syslog) protocol (tcp only)
 
 ### See also
 
@@ -69,6 +69,15 @@ stderr_logfile_backups=10
 stderr_capture_maxbytes=0
 stderr_events_enabled=false
 serverurl=AUTO
+```
+
+<a name="syslog" />
+### Syslog redirection
+
+``` sh
+$ cat /etc/rsyslog.d/99-sirvlog.conf
+
+*.* @@sirvlog.company.com:10514
 ```
 
 ### Node.JS client example:
