@@ -131,9 +131,14 @@ chef_handler "SirvLog::SirvLog" do
 end.run_action(:enable)
 ```
 
+## Authors
+
+**Oleksiy Krivoshey**
+    [https://github.com/oleksiyk](https://github.com/oleksiyk)
+
 # License (MIT)
 
-Copyright (c) 2013 Oleksiy Krivoshey
+Copyright (c) 2013 Magic Toolbox.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
