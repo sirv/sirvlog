@@ -9,7 +9,13 @@ sirvlog is Node.JS based centralized logging server for applications.
 - JSON-based messages
 - server-side filters in Javascript
 - uses ElasticSearch
+- supports syslog protocol (tcp only)
 
+### See also
+
+  * [sirvlog web frontend](https://github.com/magictoolbox/sirvlog-web)
+  * [log parser for sirvlog](https://github.com/magictoolbox/sirvlog-parser)
+  * [service healh monitors for sirvlog](https://github.com/magictoolbox/sirvlog-monitors)
 
 ## Getting started
 
@@ -134,6 +140,7 @@ end.run_action(:enable)
 ## Authors
 
 **Oleksiy Krivoshey**
+
   * [https://github.com/oleksiyk](https://github.com/oleksiyk)
 
 # License (MIT)
