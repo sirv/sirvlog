@@ -15,6 +15,12 @@ sirvlog is Node.JS based centralized logging server for applications.
 
   * Make sure you have [ElasticSearch](www.elasticsearch.org) installed and running
 
+  * Install sirvlog by either cloning this repo or with npm:
+
+``` sh
+$ npm install sirvlog
+```
+
   * Edit config.js to reflect your needs
 
   * Start server:
