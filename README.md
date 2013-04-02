@@ -1,15 +1,14 @@
 # sirvlog - centralized log server for applications
 
-sirvlog is Node.JS based centralized logging server for applications.
+sirvlog is Node based centralized log server for applications.
 
 ## Features
 
-
-- fast
 - JSON-based messages
 - server-side filters in Javascript
 - uses ElasticSearch
 - supports [syslog](#syslog) protocol (tcp only)
+- fast
 
 ### See also
 
