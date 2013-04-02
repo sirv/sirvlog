@@ -35,6 +35,42 @@ $ npm install sirvlog
 $ node server.js
 ```
 
+### Running as [supervisord](http://supervisord.org/) service
+
+[supervisord](http://supervisord.org/) is a great tool to run your Node apps as it allows you to have full control over running services (as well as [monitoring their health status](https://github.com/sirv/sirvlog-monitors) )
+
+So the typical config will be
+
+``` sh
+$ cat /etc/supervisor.d/sirvlog.conf
+
+[program:sirvlog]
+command=/home/nvm/v0.10.0/bin/node /home/sirvlog/src/server.js --config /home/sirvlog/config.js
+process_name=sirvlog
+numprocs=1
+numprocs_start=0
+autostart=true
+autorestart=true
+startsecs=1
+startretries=3
+exitcodes=0,2
+stopsignal=TERM
+stopwaitsecs=10
+user=www-data
+redirect_stderr=true
+stdout_logfile=/home/sirvlog/logs/sirvlog.log
+stdout_logfile_maxbytes=50MB
+stdout_logfile_backups=10
+stdout_capture_maxbytes=0
+stdout_events_enabled=false
+stderr_logfile=AUTO
+stderr_logfile_maxbytes=50MB
+stderr_logfile_backups=10
+stderr_capture_maxbytes=0
+stderr_events_enabled=false
+serverurl=AUTO
+```
+
 ### Node.JS client example:
 
 ``` javascript
