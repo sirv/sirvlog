@@ -34,6 +34,13 @@ module.exports = {
         }
     },
 
+    runtimeDir: './runtime',
+
+    queue: {
+        overflowLimit: 100*1000, // hold no more than this amount of messages in memory queue
+        overflowLogFile: './runtime/overflow.log'
+    },
+
     /**
      *  each function defined in this array will be called for each log message received.
      *  'this' will be a message object
