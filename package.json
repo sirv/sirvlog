@@ -1,38 +1,39 @@
 {
-  "author": {
-    "name": "Oleksiy Krivoshey",
-    "email": "<oleksiyk@gmail.com>"
-  },
-  "name": "sirvlog",
-  "description": "Application log server",
-  "version": "1.0.0",
-  "main": "./lib/sirvlog",
-  "engines": {
-    "node": ">=0.8.16"
-  },
-  "dependencies": {
-    "elastical": ">=0.0.11",
-    "optimist": ">=0.3.5",
-    "clim": ">=1.0.0",
-    "underscore": ">=1.4.4",
-    "async": ">=0.2.5"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "bugs": {
-    "url": "https://github.com/sirv/sirvlog/issues"
-  },
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sirv/sirvlog.git"
-  },
-  "keywords": [
-    "log server",
-    "logs",
-    "sirv",
-    "elasticsearch"
-  ],
-  "license": "MIT"
+    "author": {
+        "name": "Oleksiy Krivoshey",
+        "email": "<oleksiyk@gmail.com>"
+    },
+    "name": "sirvlog",
+    "description": "Application log server",
+    "version": "1.0.0",
+    "main": "./lib/sirvlog",
+    "engines": {
+        "node": ">=0.8.16"
+    },
+    "dependencies": {
+        "elastical": ">=0.0.11",
+        "optimist": ">=0.3.5",
+        "clim": ">=1.0.0",
+        "underscore": ">=1.4.4",
+        "async": ">=0.2.5",
+        "fs-persistent-object": ">=0.0.1"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "bugs": {
+        "url": "https://github.com/sirv/sirvlog/issues"
+    },
+    "readmeFilename": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/sirv/sirvlog.git"
+    },
+    "keywords": [
+        "log server",
+        "logs",
+        "sirv",
+        "elasticsearch"
+    ],
+    "license": "MIT"
 }
