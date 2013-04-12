@@ -5,6 +5,8 @@ class SirvlogClient
 
     private $options = null;
 
+    private $orderNum = 0;
+
     private $defaults = array(
         'facility' => 'sirvlog', // default logging facility
         'server' => array(
@@ -255,7 +257,9 @@ class SirvlogClient
             'hostname' => $this->hostname,
             'facility' => $this->options['facility'],
             'level' => $level,
-            'message' => $message
+            'message' => $message,
+            'timestamp' => round(microtime(true) * 1000),
+            'order' => $this->orderNum++
         );
 
         if (is_array($custom)) {
